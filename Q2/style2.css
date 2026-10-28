@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    transform: translatex(-50px);
+}
+.innerline{
+    display: flex ;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid black;
+}

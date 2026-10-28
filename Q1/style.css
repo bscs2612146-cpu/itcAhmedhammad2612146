@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.square{
+    height: 400px;
+    width: 400px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+}
+.innerline1{
+    width: 4px;
+    height: 400px;
+    background-color: black;
+    align-items: center;
+    position: absolute;
+    transform: translatex(200px) translatey(-175px);
+}
+.img{
+    height: 30%;
+    width: 30%;
+    border-radius: 50px;
+    transform: translatex(25px) translatey(60px);
+}
+.email{
+    transform: translatex(35%);
+}
+.password{
+    transform: translatey(100%) translatex(120%);
+}
+.button{
+    transform: translatey(300%) translatex(160%);
+}
+.fa-xmarks{
+    background-color: black;
+}
+#close{
+    background-color: black;
+}
+#close{
+    display: none;
+}
+body:has(#closed:checked) .parent{
+    display: none;
+}
+body:has(#closed:checked) #close{
+    display: block;
+}
